@@ -439,28 +439,34 @@ _OakSpeechText1::
 	line "Welcome to the"
 	cont "world of #MON!"
 
-	para "My name is OAK!"
+	para "I am MULBERRY!"
 	line "People call me"
 	cont "the #MON PROF!"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
+	text "I study #MON"
+	line "Mythology so I"
+	cont "can understand"
+	cont "the world and"
+	cont "learn from it."
+	
+	para "I want to make"
+	line "a better place"
+	cont "for people and"
 	cont "#MON!@"
 	text_end
 
 _OakSpeechText2B::
-	text $51,"For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
-
-	para "Myself..."
-
-	para "I study #MON"
-	line "as a profession."
+	text $51,"The adventure"
+	line "you will embark"
+	cont "on will open a"
+	cont "new world to you."
+	
+	para "One of suspense!"
+	
+	para "A world of strife,"
+	line "drama, and hope!"
 	prompt
 
 _IntroducePlayerText::
@@ -469,13 +475,13 @@ _IntroducePlayerText::
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "This hot-headed"
+	line "girl will be your"
+	cont "rival on your"
+	cont "journey."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "So, what will"
+	line "her name be?"
 	prompt
 
 _OakSpeechText3::
@@ -485,10 +491,11 @@ _OakSpeechText3::
 	line "#MON legend is"
 	cont "about to unfold!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "Let your #MON"
+	line "and determination"
+	cont "guide you!"
+	
+	para "Good luck!"
 	done
 
 _DoYouWantToNicknameText::
@@ -505,9 +512,9 @@ _YourNameIsText::
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "Wonderful! A"
+	line "perfect name"
+	cont "fitting <RIVAL>!"
 	prompt
 
 _WillBeTradedText::
