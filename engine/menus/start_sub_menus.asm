@@ -496,7 +496,13 @@ StartMenu_TrainerInfo::
 DrawTrainerInfo:
 	ld de, RedPicFront
 	lb bc, BANK(RedPicFront), $01
-	predef DisplayPicCenteredOrUpperRight
+	ld a, [wPlayerGender]
+    and a
+   	jr z, .AreBoy
+    ld de, RedfPicFront
+    lb bc, BANK(RedfPicFront), $01
+.AreBoy
+    predef DisplayPicCenteredOrUpperRight
 	call DisableLCD
 	hlcoord 0, 2
 	ld a, " "
@@ -552,34 +558,43 @@ DrawTrainerInfo:
 	dec a
 	ld [hli], a
 	ld [hl], 3
-	hlcoord 1, 10
+	hlcoord 1, 9
 	call TrainerInfo_DrawTextBox
-	hlcoord 0, 10
+	hlcoord 0, 9
 	ld a, $d7
 	call TrainerInfo_DrawVerticalLine
-	hlcoord 19, 10
+	hlcoord 0, 10	
 	call TrainerInfo_DrawVerticalLine
-	hlcoord 6, 9
+	hlcoord 19, 9	
+	call TrainerInfo_DrawVerticalLine
+	hlcoord 19, 10	
+	call TrainerInfo_DrawVerticalLine
+	hlcoord 4, 10
 	ld de, TrainerInfo_BadgesText
 	call PlaceString
-	hlcoord 2, 2
+	hlcoord 2, 1
 	ld de, TrainerInfo_NameMoneyTimeText
 	call PlaceString
-	hlcoord 7, 2
+	hlcoord 7, 1
 	ld de, wPlayerName
 	call PlaceString
-	hlcoord 8, 4
+	hlcoord 8, 3
 	ld de, wPlayerMoney
 	ld c, $e3
 	call PrintBCDNumber
-	hlcoord 9, 6
+	hlcoord 9, 5
 	ld de, wPlayTimeHours ; hours
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
 	ld [hl], $d6 ; colon tile ID
 	inc hl
 	ld de, wPlayTimeMinutes ; minutes
-	lb bc, LEADING_ZEROES | 1, 2
+	lb bc, LEADING_ZEROES | 1, 2					 
+	call PrintNumber
+	call PlaceString
+	hlcoord 8, 7
+	ld de, wPlayerID
+	lb bc, LEADING_ZEROES | 2, 5			 
 	jp PrintNumber
 
 TrainerInfo_FarCopyData:
@@ -589,12 +604,13 @@ TrainerInfo_FarCopyData:
 TrainerInfo_NameMoneyTimeText:
 	db   "NAME/"
 	next "MONEY/"
-	next "TIME/@"
+	next "TIME/"
+	next "ID/@"
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:
-	db $76,"BADGES",$76,"@"
-
+	db $76,"COLORGANGS",$76,"@"
+	
 ; draws a text box on the trainer info screen
 ; height is always 6
 ; INPUT:
@@ -610,7 +626,7 @@ TrainerInfo_DrawTextBox:
 	ld a, [wTrainerInfoTextBoxWidthPlus1]
 	ld e, a
 	ld d, 0
-	ld c, 6 ; height of the text box
+	ld c, 7 ; height of the text box
 .loop
 	ld [hl], $7c ; left edge tile ID
 	add hl, de

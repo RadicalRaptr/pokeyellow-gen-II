@@ -43,11 +43,7 @@ DrawBadges:
 	ld [hli], a
 	ld [hl], $60 ; First name
 
-	hlcoord 2, 11
-	ld de, wTempObtainedBadgesBooleans
-	call .DrawBadgeRow
-
-	hlcoord 2, 14
+	hlcoord 2, 12
 	ld de, wTempObtainedBadgesBooleans + 4
 	; fallthrough
 
@@ -113,7 +109,7 @@ DrawBadges:
 	ret
 
 .FaceBadgeTiles
-	db $20, $28, $30, $38, $40, $48, $50, $58
+	db $40, $48, $50, $58
 
 GymLeaderFaceAndBadgeTileGraphics:
 	INCBIN "gfx/trainer_card/badges.2bpp"
