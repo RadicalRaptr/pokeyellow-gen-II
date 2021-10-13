@@ -25,7 +25,7 @@ Moves:
 	move RAZOR_WIND,   CHARGE_EFFECT,               80, NORMAL,        75, 10
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, NORMAL,       100, 30
 	move CUT,          NO_ADDITIONAL_EFFECT,        50, NORMAL,        95, 30
-	move GUST,         NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
+	move GUST,         NO_ADDITIONAL_EFFECT,        40, FLYING,       100, 35
 	move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
 	move WHIRLWIND,    SWITCH_AND_TELEPORT_EFFECT,   0, NORMAL,        85, 20
 	move FLY,          FLY_EFFECT,                  70, FLYING,        95, 15
@@ -42,7 +42,7 @@ Moves:
 	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,        65, NORMAL,       100, 25
 	move FURY_ATTACK,  TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        85, 20
 	move HORN_DRILL,   OHKO_EFFECT,                  1, NORMAL,        30,  5
-	move TACKLE,       NO_ADDITIONAL_EFFECT,        35, NORMAL,        95, 35
+	move TACKLE,       NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,       85, NORMAL,       100, 15
 	move WRAP,         TRAPPING_EFFECT,             15, NORMAL,        85, 20
 	move TAKE_DOWN,    RECOIL_EFFECT,               90, NORMAL,        85, 20
@@ -100,7 +100,7 @@ Moves:
 	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,          65, 15
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 10
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,        30,  5
-	move DIG,          CHARGE_EFFECT,              100, GROUND,       100, 10
+	move DIG,          CHARGE_EFFECT,               80, GROUND,       100, 10
 	move TOXIC,        POISON_EFFECT,                0, POISON,        85, 10
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 25
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,    90, PSYCHIC_TYPE, 100, 10

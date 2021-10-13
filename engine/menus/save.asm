@@ -152,7 +152,7 @@ SaveSAV:
 	call SaveSAVtoSRAM
 	ld hl, SavingText
 	call PrintText
-	ld c, 128
+	ld c, 12
 	call DelayFrames
 	ld hl, GameSavedText
 	call PrintText

@@ -1,9 +1,9 @@
 	db DEX_PIKACHU ; pokedex id
 
-	db  35,  55,  30,  90,  50
+	db  60,  75,  50,  35,  50
 	;   hp  atk  def  spd  spc
 
-	db ELECTRIC, ELECTRIC ; type
+	db GROUND, ELECTRIC ; type
 	db 190 ; catch rate
 	db 82 ; base exp
 

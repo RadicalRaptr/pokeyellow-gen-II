@@ -239,13 +239,13 @@ _ArbokDexEntry::
 	dex
 
 _PikachuDexEntry::
-	text "It keeps its tail"
-	next "raised to monitor"
-	next "its surroundings."
+	text "Ancient science"
+	next "made this #MON"
+	next "of clay long ago."
 
-	page "If you yank its"
-	next "tail, it will try"
-	next "to bite you"
+	page "No one knows what"
+	next "the energy this"
+	next "#MON burns is"
 	dex
 
 _RaichuDexEntry::
