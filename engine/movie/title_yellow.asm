@@ -44,14 +44,22 @@ TitleScreen_PlacePikachu:
 	ld de, TitleScreenPikachuTilemap
 	lb bc, 9, 12
 	call Bank3D_CopyBox
-	hlcoord 16, 10
-	ld [hl], $96
-	hlcoord 16, 11
-	ld [hl], $9d
 	hlcoord 16, 12
-	ld [hl], $a7
+	ld [hl], $D3
 	hlcoord 16, 13
-	ld [hl], $b1
+	ld [hl], $D4
+	hlcoord 16, 14
+	ld [hl], $D6
+	hlcoord 16, 15
+	ld [hl], $D8
+	hlcoord 16, 16
+	ld [hl], $D2
+	hlcoord 17, 13
+	ld [hl], $D5
+	hlcoord 17, 14
+	ld [hl], $D7
+	hlcoord 17, 15
+	ld [hl], $D9
 	ld hl, TitleScreenPikachuEyesOAMData
 	ld de, wOAMBuffer
 	ld bc, $20
