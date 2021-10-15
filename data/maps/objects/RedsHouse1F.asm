@@ -4,7 +4,7 @@ RedsHouse1F_Object:
 	def_warps
 	warp  2,  7, 0, LAST_MAP ; exit1
 	warp  3,  7, 0, LAST_MAP ; exit2
-	warp  7,  1, 0, REDS_HOUSE_2F ; staircase
+	warp  7,  1, 0, POKEMON_TOWER_1F  ; staircase
 
 	def_signs
 	sign  3,  1, 2 ; TV

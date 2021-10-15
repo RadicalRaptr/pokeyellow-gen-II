@@ -1,5 +1,6 @@
 DoorTileIDPointers:
 	dbw OVERWORLD,   .OverworldDoorTileIDs
+	dbw GYM,		 .GymDoorTileIDs
 	dbw FOREST,      .ForestDoorTileIDs
 	dbw MART,        .MartDoorTileIDs
 	dbw HOUSE,       .HouseDoorTileIDs
@@ -13,6 +14,7 @@ DoorTileIDPointers:
 	dbw FACILITY,    .FacilityDoorTileIDs
 	dbw PLATEAU,     .PlateauDoorTileIDs
 	dbw INTERIOR,    .InteriorDoorTileIDs
+	dbw DOJO,		 .DojoDoorTileIDs
 	db -1 ; end
 
 door_tiles: MACRO
@@ -25,6 +27,9 @@ ENDM
 
 .OverworldDoorTileIDs:
 	door_tiles $1B, $58
+
+.GymDoorTileIDs:
+	door_tiles $1B, $0B
 
 .ForestDoorTileIDs:
 	door_tiles $3a
@@ -58,3 +63,6 @@ ENDM
 
 .InteriorDoorTileIDs:
 	door_tiles $04, $15
+
+.DojoDoorTileIDs:
+	door_tiles $1B, $0B

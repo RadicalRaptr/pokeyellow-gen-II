@@ -1,5 +1,5 @@
 PalletTown_Object:
-	db $b ; border block
+	db $01 ; border block
 
 	def_warps
 	warp 15, 13, 0, REDS_HOUSE_1F

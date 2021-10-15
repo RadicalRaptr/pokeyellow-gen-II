@@ -56,7 +56,7 @@ ENDM
 
 .DojoWarpTileIDs:
 .GymWarpTileIDs:
-	warp_tiles $4A
+	warp_tiles $1B
 
 .HouseWarpTileIDs:
 	warp_tiles $54, $5C, $32

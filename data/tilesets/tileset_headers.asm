@@ -24,7 +24,7 @@ Tilesets:
 	tileset Gate_Block,        Gate_GFX,        Gate_Coll,        $17,$32,$FF, $FF, TILEANIM_NONE
 	tileset Ship_Block,        Ship_GFX,        Ship_Coll,        $FF,$FF,$FF, $FF, TILEANIM_WATER
 	tileset ShipPort_Block,    ShipPort_GFX,    ShipPort_Coll,    $FF,$FF,$FF, $FF, TILEANIM_WATER
-	tileset Cemetery_Block,    Cemetery_GFX,    Cemetery_Coll,    $12,$FF,$FF, $FF, TILEANIM_NONE
+	tileset Cemetery_Block,    Cemetery_GFX,    Cemetery_Coll,    $12,$FF,$FF, $FF, TILEANIM_WATER
 	tileset Interior_Block,    Interior_GFX,    Interior_Coll,    $FF,$FF,$FF, $FF, TILEANIM_NONE
 	tileset Cavern_Block,      Cavern_GFX,      Cavern_Coll,      $FF,$FF,$FF, $FF, TILEANIM_WATER
 	tileset Lobby_Block,       Lobby_GFX,       Lobby_Coll,       $15,$36,$FF, $FF, TILEANIM_NONE
